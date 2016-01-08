@@ -8,10 +8,23 @@ public void setup()
 }  
 public void draw()  
 {   
-	//not needed for this assignment
+	for(int i=2 ; i<e.length();i++)
+	{
+		
+	} //not needed for this assignment
 }  
 public boolean isPrime(double dNum)  
 {   
-    //to be finished later   
+   for(int i=2; i<=Math.sqrt(dNum);i++) 
+   {
+    if (dNum%i ==0)
+    {
+     return false;
+     }
+     }
+     if(dNum<=1)
+     {
+      return false;
+      }//to be finished later   
     return true;  
 } 
