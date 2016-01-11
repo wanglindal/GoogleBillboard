@@ -8,10 +8,12 @@ public void setup()
 }  
 public void draw()  
 {   
-	for(int i=2 ; i<e.length();i++)
+	for(int i=2; i<e.length();i++)
 	{
-		
-	} //not needed for this assignment
+		String bob= e.substring(i,i+10);
+		break;
+	} 
+	//not needed for this assignment
 }  
 public boolean isPrime(double dNum)  
 {   
@@ -21,7 +23,7 @@ public boolean isPrime(double dNum)
     {
      return false;
      }
-     }
+    }
      if(dNum<=1)
      {
       return false;

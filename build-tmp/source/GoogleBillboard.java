@@ -24,7 +24,15 @@ public void setup()
 }  
 public void draw()  
 {   
-	//not needed for this assignment
+	for(int i=2; i<e.length();i++)
+	{
+		String bob= e.substring(i,i+10);
+		break;
+	} 
+	if(isPrime==true)
+	{
+	System.out.println(dNum);
+	}//not needed for this assignment
 }  
 public boolean isPrime(double dNum)  
 {   
@@ -34,7 +42,7 @@ public boolean isPrime(double dNum)
     {
      return false;
      }
-     }
+    }
      if(dNum<=1)
      {
       return false;
