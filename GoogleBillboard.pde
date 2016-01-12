@@ -5,14 +5,19 @@ public void setup()
      String digits = e.substring(2,12);
 	double dNum = Double.parseDouble(digits);
 	System.out.println(dNum); //displays 7.182818284E9
+	for(int i=2; i<e.length();i++)
+	{
+		double test= Double.parseDouble(e.substring(i,i+10));
+      if(isPrime(test)== true)
+      {
+      	System.out.println(test);
+      	break;
+      }
+		
+	}
 }  
 public void draw()  
 {   
-	for(int i=2; i<e.length();i++)
-	{
-		String bob= e.substring(i,i+10);
-		break;
-	} 
 	//not needed for this assignment
 }  
 public boolean isPrime(double dNum)  
